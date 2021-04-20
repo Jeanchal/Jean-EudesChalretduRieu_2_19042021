@@ -1,4 +1,46 @@
-#logo, nav, section
+@font-face 
+{
+    font-family: 'Raleway';
+    src: url('Raleway-VariableFont_wght.ttf') format('truetype'),
+         url('Raleway-Italic-VariableFont_wght.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;	
+}
+h2
+{
+	font-size: 1.4em;
+	padding-top: 10px;
+	padding-bottom: -5px;
+}
+h3
+{
+	font-size: 1em;
+	font-weight: bold;
+}
+.t-element
+{
+	font-size: 0.95em;
+	margin-top: 5px;
+}
+.p-element
+{
+	padding-top: 5px;
+	font-size: 0.85em;
+}
+.retrait-titre
+{
+	padding-left: 25px;
+}
+#pos-afficherplus
+{
+	padding-bottom: 10px;
+}
+body
+{
+	font-family: 'Raleway',Time New Roman, Arial, Georgia, Verdana, Impact;
+	font-weight: normal;
+}
+#logo, section
 {
 	margin: 30px 30px 0px 30px;
 }
@@ -6,13 +48,30 @@ nav
 {
 	padding-right: 40px;
 }
+.nav-retrait
+{
+	margin-right: 50px;
+}
 .nav
 {
-	margin-right: 80px;
+	padding: 40px 20px 0 20px;
+	position: relative;
+	bottom: 9px;
+	padding-top: 50px;
 }
 .flex
 {
 	display: flex;
+}
+.flex-aside
+{
+	display: flex;
+	justify-content: space-between;
+}
+.flex-wrap
+{
+	display: flex;
+	flex-wrap: wrap;
 }
 .retrait-droite
 {
@@ -24,60 +83,308 @@ nav
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+.conteneur-article
+{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 0 10px 0 10px;
+}
+.conteneur-aside
+{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+}
+#activites
+{
+	margin-left: -10px;
+	margin-right: -10px;
+}
+#aside
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 5px 0 5px;
+}
 .element
 {
 	background-color: white;
-	border: 4px solid white;
-	border-radius: 10px;
-	padding: 10px 10px 10px 10px;
-	margin: 10px 10px 10px 10px;
 	box-shadow: 0 1px 5px 5px rgb(230, 230, 230);
+	border-radius: 20px;
+	margin: 5px 15px 25px 15px;
+}
+.element-act
+{
+	background-color: white;
+	box-shadow: 0 1px 5px 3px rgb(241, 241, 241);
+	border-radius: 20px;
+	margin: 5px 12px 25px 15px;
+}
+.bordure-blanche
+{
+	border: 4px solid white;
+}
+.element-position
+{
+	margin-top: 40px;
 }
 #sectionrecherche
 {
 	display: flex;
-	border: 1px solid rgb(0, 0, 0);
-	border-radius: 15px;
-	padding: 0px 0px 0px 20px;
-	max-width: 30%;
+	width: 500px;
+	position: relative;
+	right: 20px;
 }
 #rechercher
 {
-	padding: 6px 0 0 50px;
+	padding: 15px 20px 0 35px;
+	z-index: 1;
+	position: relative;
+	right: 10px;
 }
-#filtres
+#icon-position
 {
-	padding: 10px 10px 10px 0px;
+	padding: 15px 25px 15px 15px;
+	width: 10px;
+	z-index: 2;
+	position: relative;
+	left: 20px;
+}
+#icon-recherche
+{
+	color: white;
+	display: none;
+}
+#position-rechercher
+{
+	position: relative;
+	left: 10px;
+	z-index: 3;
+	padding: 15px 80px 10px 10px;
+	font-weight: bold;
+	border: 1px solid rgb(242, 242, 242);
+}
+.icon
+{
+	background-color: rgb(222, 235, 255);
+	padding: 10px 12px 10px 12px;
+	border-radius: 20px;
+	position: relative;
+	right: 3px;
+}
+#icon-aside
+{
+	padding-top: 30px;
+	padding-right: 30px;
+	font-size: 1.5em;
+}
+.star
+{
+	padding-top: 5px;
+}
+.taille-star
+{
+	font-size: 0.75em;
+}
+.taille-star-aside
+{
+	font-size: 0.7em;
+	padding-top: 30px;
+	position: relative;
+	top: 10px;
 }
 .filtres
 {
+	padding: 10px 17px 10px 7px;
+	font-weight: bold;
+}
+.filtres-conteneur
+{
 	display: flex;
-	border: 1px solid rgb(0, 0, 0);
+	align-items: center;
+	justify-content: space-around;
 	border-radius: 30px;
 	max-width: 40%;
-	margin-left: 40px;
-	padding: 10px 10px 10px 10px;
+	max-height: 34px;
+	margin-left: 20px;
+	font-weight: bold;
+}
+ul
+{
+	list-style-type: none;
+}
+li
+{
+	position: relative;
+	right: 40px;
+	padding-top: 10px;
 }
 article
 {
 	background-color: rgb(242, 242, 242);
-	border-radius: 10px;
+	border-radius: 20px;
 	padding: 15px 15px 15px 15px;
 	margin: 20px 0 0 0;
-	max-width: 65%;
+	max-width: 800px;
 }
 aside
 {
 	background-color: rgb(242, 242, 242);
 	border-radius: 10px;
 	padding: 15px 15px 15px 15px;
-	margin: 20px 30px 0 0;
+	margin: 20px 0 0 10px;
+	max-width: 380px;
 }
 footer
 {
+	background-color: rgb(242, 242, 242);
+}
+#footer
+{
 	display: flex;
 	justify-content: space-between;
-	background-color: rgb(242, 242, 242);
-	padding: 0 400px 0 30px;
 	margin-top: 30px;
+	max-width: 75%;
+	padding-top: 20px;
+	padding-bottom: 30px;
 }
+.gras
+{
+	font-weight: bold;
+}
+.gris
+{
+	color: rgb(217, 217, 217);
+}
+.bleu
+{
+	color: #0065FC;
+}
+.blanc
+{
+	color: white;
+}
+.background-bleu
+{
+	background-color: rgb(0, 101, 252);
+	border-radius: 10px;
+}
+.background-beige
+{
+	background-color: rgb(242, 242, 242);
+	border-radius: 10px;
+}
+.background-blanc
+{
+	background-color: white;
+}
+.bordure
+{
+	border-radius: 15px;
+}
+.bordure-beige
+{
+	border: 2px solid rgb(217, 217, 217);
+}
+.bordure-nav
+{
+	border-top: 3px solid rgb(0, 101, 252);
+	padding: 40px 20px 0 20px;
+	position: relative;
+	bottom: 9px;
+	padding-top: 47px;
+}
+.image-petit
+{
+	width: 217px;
+	height: 107px;
+	border-top-right-radius:  15px;
+	border-top-left-radius:  15px;
+}
+.pos-txt-element
+{
+	padding: 5px 10px 5px 10px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+.txt-act
+{
+	padding: 12px 15px 15px 15px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	font-size: 0.95em;
+}
+.image-aside
+{	
+	width: 125px;
+	height: 135px;
+	border-top-left-radius:  15px;
+	border-bottom-left-radius:  15px;
+	margin-bottom: -4px;
+}
+.position-right
+{
+	border-top-right-radius:  15px;
+	border-bottom-right-radius:  15px;
+	padding: 10px 25px 10px 20px;
+	width: 150px;
+}
+.image-act
+{
+	width: 287px;
+	height: auto;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+.g-image-act
+{
+	width: 287px;
+	height: 366px;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+.lien, .lien:visited, .lien:active, .lien:hover
+{
+	text-decoration: none;
+	color: black;
+}
+.lien-blanc, .lien-blanc:visited, .lien-blanc:active, .lien-blanc:hover
+{
+	text-decoration: none;
+	color: white;
+}
+.lien-bleu, .lien-bleu:visited, .lien-bleu:active, .lien-bleu:hover
+{
+	text-decoration: none;
+	color: #0065FC;
+}
+@media screen and (max-width: 600px)
+{
+	body
+	{
+		width: auto;
+	}
+	.element
+	{
+		min-width: 300px;
+	}
+	.image-petit
+	{
+		min-width: 300px;
+	}
+	#footer
+	{
+		flex-direction: column;
+	}
+	#r-none
+	{
+		display: none;
+	}
+	#icon-recherche
+	{
+		display: flex;
+	}
+}
+
