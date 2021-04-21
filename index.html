@@ -1,114 +1,105 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
 	<meta charset="utf-8" />
 	<title>Reservia</title>
 	<link rel="stylesheet" href="reservia.css" />
 	<link rel="stylesheet" href="fontawesome/css/all.css" />
 </head>
-
 <body>
-	<!-- Header-------------------------------------------- -->
+	<!--Header-->
 	<header>
 		<div id="Head-conteneur">
-			<!-- Logo ---------------------------------------->
+			<!--Logo-->
 			<div id="Logo-conteneur">
-				<figure id="Logo-figure"><img src="logo/Reservia.svg" id="Logo-image" /></figure>
-				<div id="Nav-sinscrire" class="Nav-element Nav-bordure-blanche gras none"><a href="#"
-						class="lien-bleu">S'inscrire</a></div>
+				<figure id="Logo-figure"><img src="logo/Reservia.svg" alt="" id="Logo-image" /></figure>
+				<div id="Nav-sinscrire" class="Nav-element Nav-bordure-blanche gras none"><a href="#" class="lien-bleu">S'inscrire</a></div>
 			</div>
-			<!-- Navigation ----------------------------------->
+			<!--Navigation-->
 			<nav id="Nav-conteneur">
-				<!-- Hébergements---------------------------------- -->
-				<div id="Nav-hebergements" class="Nav-element"><a href="#Hebergements-conteneur"
-						class="lien-bleu">Hébergements</a></div>
-				<!-- Activités-------------------------------------- -->
-				<div id="Nav-activites" class="Nav-element Nav-bordure-blanche"><a href="#Activites-section"
-						class="lien">Activités</a></div>
-				<!-- S'inscrire------------------------------------------ -->
-				<div class="Nav-element Nav-bordure-blanche gras exist"><a href="#Nav-conteneur"
-						class="lien-bleu">S'inscrire</a></div>
+				<!--Hébergements-->
+				<div id="Nav-hebergements" class="Nav-element"><a href="#Hebergements-conteneur" class="lien-bleu">Hébergements</a></div>
+				<!--Activités-->
+				<div id="Nav-activites" class="Nav-element Nav-bordure-blanche"><a href="#Activites-section" class="lien">Activités</a></div>
+				<!--S'inscrire-->
+				<div class="Nav-element Nav-bordure-blanche gras exist"><a href="#Nav-conteneur" class="lien-bleu">S'inscrire</a></div>
 			</nav>
 		</div>
-		<!-- Trouvez votre hébergement pour des vacances de rêve -->
-		<section>
+		<!--Trouvez votre hébergement pour des vacances de rêve-->
+		<section id="Recherche-Filtres-conteneur">
 			<h2 id="Titre-principal">Trouvez votre hébergement pour des vacances de rêve</h2>
 			<p>En plein centre ville ou en pleine nature</p>
-		</section>
-		<!-- Recherche -------------------------------------------------------->
-		<section id="Recherche">
-			<!-- icon-recherche -------------------------------------------------------->
+		<!--Recherche-->
+		<div id="Recherche-conteneur">
+			<!--icon-recherche-->
 			<a href="#" class="lien">
 				<div id="R-icon-position" class="background-beige"><i class="fas fa-map-marker-alt"></i>
 				</div>
 			</a>
 			<div class="flex background-blanc">
-				<!-- barre de recherche -------------------------------------------------------->
+				<!--barre de recherche-->
 				<div id="R-barre-recherche" class="background-blanc"><input type="text" value="Marseille, France"
 						id="R-barre-txt" /></div>
-				<!-- bouton rechercher -------------------------------------------------------->
+				<!--bouton rechercher-->
 				<a href="#" class="lien-blanc">
-					<div id="R-btn-rechercher" class="blanc gras"><i class="fas fa-search"
-							id="R-icon-recherche"></i><span id="R-none">Rechercher</span></div>
+					<div id="R-btn-rechercher" class="blanc gras"><i class="fas fa-search" id="R-icon-recherche"></i><span id="R-none">Rechercher</span></div>
 				</a>
 			</div>
-		</section>
-		<!-- Filtres -------------------------------------------------------------------->
-		<section class="flex-wrap">
+		</div>
+		<!--Filtres-->
+		<div id="Filtres-conteneur">
 			<div id="Filtre-titre" class="Filtres-txt">Filtres</div>
-			<!-- Filtre "Economique"-------------------------------------------------------------------->
+			<!--Filtre "Economique"-->
 			<a href="#" class="lien">
 				<div class="Filtres-element">
 					<div class="Filtres-icon"><i class="fas fa-money-bill-wave bleu"></i></div>
 					<div class="Filtres-txt">Economique</div>
 				</div>
 			</a>
-			<!-- Filtre "Familial"-------------------------------------------------------------------->
+			<!--Filtre "Familial"-->
 			<a href="#" class="lien">
 				<div class="Filtres-element">
 					<div class="Filtres-icon"><i class="fas fa-child bleu"></i></div>
 					<div class="Filtres-txt">Familial</div>
 				</div>
 			</a>
-			<!-- Filtre "Romantique"-------------------------------------------------------------------->
+			<!--Filtre "Romantique"-->
 			<a href="#" class="lien">
 				<div id="Filtre-marge" class="Filtres-element">
 					<div class="Filtres-icon"><i class="fas fa-heart bleu"></i></div>
 					<div class="Filtres-txt">Romantique</div>
 				</div>
 			</a>
-			<!-- Filtre "Animaux autorisés"-------------------------------------------------------------------->
+			<!--Filtre "Animaux autorisés"-->
 			<a href="#" class="lien">
 				<div class="Filtres-element">
 					<div class="Filtres-icon"><i class="fas fa-dog bleu"></i></div>
 					<div class="Filtres-txt">Animaux autorisés</div>
 				</div>
 			</a>
-		</section>
-		<!-- Plus de 500 logements disponibles dans cette ville -->
-		<section id="Plusde500">
+		</div>
+		<!--Plus de 500 logements disponibles dans cette ville-->
+		<div id="Plusde500">
 			<div id="pr-icon-i"><i class="fas fa-info bleu"></i></div>
 			<p>Plus de 500 logements sont disponibles dans cette ville</p>
-		</section>
+		</div>
 		</section>
 	</header>
-	<!-- Fin du Header--------------------------------------------------- -->
-	<!-- Main---------------------------------------------------------------------------------->
+	<!--Fin du Header-->
+	<!--Main-->
 	<main>
-		<!-- Section : Hébergements à Marseille ------------------------------>
-		<section id="Hebergements-conteneur">
-			<!-- Article :Hébergements à Marseille----------------------------------- -->
+		<!--Section : Hébergements à Marseille-->
+		<div id="Hebergements-conteneur">
+			<!--Article :Hébergements à Marseille-->
 			<article>
 				<div id="Article-general-conteneur">
 					<h2 id="Article-titre">Hébergements à Marseille</h2>
-					<!-- Conteneur------------------------------------------------------------ -->
+					<!--Conteneur-->
 					<div class="Article-conteneur">
-						<!-- Cannebiére------------------------------------------------------------>
+						<!--Cannebiére-->
 						<a href="#Hebergements-conteneur" class="lien">
 							<div class="Article-element bordure-blanche">
-								<figure class="Article-figure"><img src="petit/cannebiere.jpg" class="Article-image" />
-								</figure>
+								<figure class="Article-figure"><img src="petit/cannebiere.jpg" alt="" class="Article-image"/></figure>
 								<div class="Article-txt background-blanc">
 									<div class="Element-titre gras">Auberge la Cannebière</div>
 									<div class="Element-pr">Nuit à partir de <span class="gras">25€</span></div>
@@ -122,11 +113,10 @@
 								</div>
 							</div>
 						</a>
-						<!-- Hotel du port------------------------------------------------------------ -->
+						<!--Hotel du port-->
 						<a href="#Hebergements-conteneur" class="lien">
 							<div class="Article-element bordure-blanche">
-								<figure class="Article-figure"><img src="petit/hotelduport.jpg" class="Article-image" />
-								</figure>
+								<figure class="Article-figure"><img src="petit/hotelduport.jpg" alt="" class="Article-image"/></figure>
 								<div class="Article-txt background-blanc">
 									<div class="Element-titre gras">Hôtel du port</div>
 									<div class="Element-pr">Nuit à partir de 52<span class="gras">€</span></div>
@@ -140,11 +130,10 @@
 								</div>
 							</div>
 						</a>
-						<!-- Les mouettes------------------------------------------------------------ -->
+						<!--Les mouettes-->
 						<a href="#Hebergements-conteneur" class="lien">
 							<div class="Article-element bordure-blanche">
-								<figure class="Article-figure"><img src="petit/lesmouettes.jpg" class="Article-image" />
-								</figure>
+								<figure class="Article-figure"><img src="petit/lesmouettes.jpg" alt="" class="Article-image"/></figure>
 								<div class="Article-txt background-blanc">
 									<div class="Element-titre gras">Hôtel Les mouettes</div>
 									<div class="Element-pr">Nuit à partir de 76<span class="gras">€</span></div>
@@ -158,11 +147,10 @@
 								</div>
 							</div>
 						</a>
-						<!--Hotel de la mer------------------------------------------------------------ -->
+						<!--Hotel de la mer-->
 						<a href="#Hebergements-conteneur" class="lien">
 							<div class="Article-element bordure-blanche">
-								<figure class="Article-figure"><img src="petit/hoteldelamer.jpg"
-										class="Article-image" /></figure>
+								<figure class="Article-figure"><img src="petit/hoteldelamer.jpg" alt="" class="Article-image"/></figure>
 								<div class="Article-txt background-blanc">
 									<div class="Element-titre gras">Hôtel de la mer</div>
 									<div class="Element-pr">Nuit à partir de 46<span class="gras">€</span></div>
@@ -176,10 +164,10 @@
 								</div>
 							</div>
 						</a>
-						<!-- le Panier------------------------------------------------------------ -->
+						<!--le Panier-->
 						<a href="#Hebergements-conteneur" class="lien">
 							<div class="Article-element bordure-blanche">
-								<figure class="Article-figure"><img src="petit/lepanier.jpg" class="Article-image" />
+								<figure class="Article-figure"><img src="petit/lepanier.jpg" alt="" class="Article-image"/>
 								</figure>
 								<div class="Article-txt background-blanc">
 									<div class="Element-titre gras">Auberge Le Panier</div>
@@ -194,10 +182,10 @@
 								</div>
 							</div>
 						</a>
-						<!-- Chez amina------------------------------------------------------------ -->
+						<!--Chez amina-->
 						<a href="#Hebergements-conteneur" class="lien">
 							<div class="Article-element bordure-blanche">
-								<figure class="Article-figure"><img src="petit/chezamina.jpg" class="Article-image" />
+								<figure class="Article-figure"><img src="petit/chezamina.jpg" alt="" class="Article-image"/>
 								</figure>
 								<div class="Article-txt background-blanc">
 									<div class="Element-titre gras">Hôtel chez Amina</div>
@@ -211,11 +199,12 @@
 									</div>
 								</div>
 							</div>
-					</div></a>
-					<h3 id="Article-afficherplus"><a href="##Hebergements-conteneur" class="lien">Afficher plus</a></h3>
+						</a>
+					</div>
+					<h3 id="Article-afficherplus"><a href="#Hebergements-conteneur" class="lien">Afficher plus</a></h3>
 				</div>
 			</article>
-			<!-- Aside : Les plus populaires-------------------------- -->
+			<!--Aside : Les plus populaires-->
 			<aside>
 				<div id="Aside-general-conteneur">
 					<div id="Aside-titre-conteneur">
@@ -224,13 +213,12 @@
 						</div>
 						<div><i class="fas fa-chart-line" id="Aside-icon"></i></div>
 					</div>
-					<!-- Conteneur------------------------------------------------------------ -->
+					<!--Conteneur-->
 					<div class="Aside-conteneur">
-						<!-- Hotel le soleil------------------------------------------------------------ -->
+						<!--Hotel le soleil-->
 						<a href="#Aside-general-conteneur" class="lien">
 							<div class="Aside-element bordure-blanche">
-								<figure class="Aside-figure"><img src="petit/lesoleildumatin.jpg" class="Aside-image" />
-								</figure>
+								<figure class="Aside-figure"><img src="petit/lesoleildumatin.jpg" alt="" class="Aside-image"/></figure>
 								<div class="Aside-txt background-blanc">
 									<div class="Element-titre gras">Hôtel Le soleil du matin</div>
 									<div class="Element-pr">Nuit à partir de 128<span class="gras">€</span></div>
@@ -244,11 +232,10 @@
 								</div>
 							</div>
 						</a>
-						<!-- Au coeur de l'eau------------------------------------------------------------ -->
+						<!--Au coeur de l'eau-->
 						<a href="#Aside-general-conteneur" class="lien">
 							<div class="Aside-element bordure-blanche">
-								<figure class="Aside-figure"><img src="petit/aucoeurdeleau.jpg" class="Aside-image" />
-								</figure>
+								<figure class="Aside-figure"><img src="petit/aucoeurdeleau.jpg" alt="" class="Aside-image"/></figure>
 								<div class="Aside-txt background-blanc">
 									<div class="Element-titre gras">Au coeur de l'eau Chambres d'hôtes</div>
 									<div class="Element-pr">Nuit à partir de 71<span class="gras">€</span></div>
@@ -262,11 +249,10 @@
 								</div>
 							</div>
 						</a>
-						<!-- Hotel tout bleu et blanc------------------------------------------------------------ -->
+						<!--Hotel tout bleu et blanc-->
 						<a href="#Aside-general-conteneur" class="lien">
 							<div class="Aside-element bordure-blanche">
-								<figure class="Aside-figure"><img src="petit/toutbleuetblanc.jpg" class="Aside-image" />
-								</figure>
+								<figure class="Aside-figure"><img src="petit/toutbleuetblanc.jpg" alt="" class="Aside-image"/></figure>
 								<div class="Aside-txt background-blanc">
 									<div class="Element-titre gras">Hôtel Tout bleu et Blanc</div>
 									<div class="Element-pr">Nuit à partir de 68<span class="gras">€</span></div>
@@ -283,74 +269,70 @@
 					</div>
 				</div>
 			</aside>
-		</section>
-		<!-- Activités à Marseille------------------------------------------------------------ -->
+		</div>
+		<!--Activités à Marseille-->
 		<section id="Activites-section">
 			<div id="Activites-general-conteneur">
 				<h2 id="Activites-titre">Activités à Marseille</h2>
-				<!-- Conteneur------------------------------------------------------------ -->
+				<!--Conteneur-->
 				<div id="Activites-conteneur">
-					<!-- Vieux port------------------------------------------------------------ -->
+					<!--Vieux port-->
 					<a href="#Activites-general-conteneur" class="lien">
 						<div class="Act-element">
-							<figure class="Act-gr-figure"><img src="petit/port.jpg" class="Act-image" /></figure>
+							<figure class="Act-gr-figure"><img src="petit/port.jpg" alt="" class="Act-image"/></figure>
 							<div class="Act-txt background-blanc gras">Vieux port</div>
 						</div>
 					</a>
-					<!-- Petit conteneur------------------------------------------------------------ -->
+					<!--Petit conteneur-->
 					<div>
-						<!-- Fort de pomègues------------------------------------------------------------ -->
+						<!--Fort de pomègues-->
 						<a href="#Activites-general-conteneur" class="lien">
 							<div class="Act-element">
-								<figure class="Act-sp-gr-figure"><img src="petit/fortdepomegues.jpg"
-										class="Act-image" /></figure>
+								<figure class="Act-sp-gr-figure"><img src="petit/fortdepomegues.jpg" alt="" class="Act-image"/></figure>
 								<div class="Act-txt background-blanc gras">Fort de Pomègues</div>
 							</div>
 						</a>
-						<!-- iles du frioul------------------------------------------------------------ -->
+						<!--iles du frioul-->
 						<a href="#Activites-general-conteneur" class="lien">
 							<div class="Act-element Act-elem-decalbas">
-								<figure class="Act-sp-pt-figure"><img src="petit/ilesdufrioul.jpg" class="Act-image" />
-								</figure>
+								<figure class="Act-sp-pt-figure"><img src="petit/ilesdufrioul.jpg" alt="" class="Act-image"/></figure>
 								<div class="Act-txt background-blanc gras">Îles du Frioul</div>
 							</div>
 						</a>
-						<!-- Fin du petit conteneur------------------------------------------------------------ -->
+						<!--Fin du petit conteneur-->
 					</div>
-					<!-- Calanques------------------------------------------------------------ -->
+					<!--Calanques-->
 					<a href="#Activites-general-conteneur" class="lien">
 						<div class="Act-element">
-							<figure class="Act-gr-figure"><img src="petit/calanques.jpg" class="Act-image" /></figure>
+							<figure class="Act-gr-figure"><img src="petit/calanques.jpg" alt="" class="Act-image"/></figure>
 							<div class="Act-txt background-blanc gras">Parc National des Calanques</div>
 						</div>
 					</a>
-					<!-- Petit conteneur------------------------------------------------------------ -->
+					<!--Petit conteneur-->
 					<div>
-						<!-- ND de la Garde------------------------------------------------------------ -->
+						<!--ND de la Garde-->
 						<a href="#Activites-general-conteneur" class="lien">
 							<div class="Act-element">
-								<figure class="Act-pt-figure"><img src="petit/nddelagarde.jpg" class="Act-image" />
-								</figure>
+								<figure class="Act-pt-figure"><img src="petit/nddelagarde.jpg" class="Act-image"/></figure>
 								<div class="Act-txt background-blanc gras">Notre-Dame-de-la-Garde</div>
 							</div>
 						</a>
-						<!-- Parc longchamp------------------------------------------------------------ -->
+						<!--Parc longchamp-->
 						<a href="#Activites-general-conteneur" class="lien">
 							<div class="Act-element Act-elem-decalbas">
-								<figure class="Act-pt-figure"><img src="petit/parclongchamp.jpg" class="Act-image" />
-								</figure>
+								<figure class="Act-pt-figure"><img src="petit/parclongchamp.jpg" alt="" class="Act-image"/></figure>
 								<div class="Act-txt background-blanc gras">Parc Longchamp</div>
 							</div>
 						</a>
 					</div>
-					<!-- Fin du petit conteneur------------------------------------------------------------ -->
+					<!--Fin du petit conteneur-->
 				</div>
 			</div>
 		</section>
 	</main>
-	<!-- Footer ------------------------------------------------------------------>
+	<!--Footer-->
 	<footer>
-		<!-- À propos --------------------------------------------------------->
+		<!--À propos-->
 		<section id="Footer">
 			<div>
 				<h3>A propos</h3>
@@ -360,7 +342,7 @@
 					<li><a href="#Footer" class="lien-footer">Données et confidentialité</a></li>
 				</ul>
 			</div>
-			<!-- Nos hébergements ---------------------------------------------------->
+			<!--Nos hébergements-->
 			<div>
 				<h3>Nos hébergements</h3>
 				<ul>
@@ -368,7 +350,7 @@
 					<li><a href="#Footer" class="lien-footer">Soumettre votre hôtel</a></li>
 				</ul>
 			</div>
-			<!-- Assistance -------------------------------------------------------------->
+			<!--Assistance-->
 			<div>
 				<h3>Assistance</h3>
 				<ul>
@@ -379,5 +361,4 @@
 		</section>
 	</footer>
 </body>
-
 </html>
