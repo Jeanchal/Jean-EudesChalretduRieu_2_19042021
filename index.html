@@ -18,7 +18,7 @@
 			<!--Navigation-->
 			<nav id="Nav-conteneur">
 				<!--Hébergements-->
-				<div id="Nav-hebergements" class="Nav-element"><a href="#Hebergements-conteneur" class="lien-nav">Hébergements</a></div>
+				<div id="Nav-hebergements" class="Nav-element"><a href="#Article-section-hebergements" class="lien-nav">Hébergements</a></div>
 				<!--Activités-->
 				<div id="Nav-activites" class="Nav-element Nav-bordure-blanche"><a href="#Activites-section" class="lien-nav">Activités</a></div>
 				<!--S'inscrire-->
@@ -36,9 +36,9 @@
 				<div id="R-icon-position" class="background-beige"><i class="fas fa-map-marker-alt"></i>
 				</div>
 			</a>
-			<div class="flex background-blanc">
+			<div class="flex">
 				<!--barre de recherche-->
-				<div id="R-barre-recherche" class="background-blanc"><input type="text" value="Marseille, France"
+				<div id="R-barre-recherche"><input type="text" value="Marseille, France"
 						id="R-barre-txt" /></div>
 				<!--bouton rechercher-->
 				<a href="#" class="lien-blanc">
@@ -89,15 +89,15 @@
 	<!--Main-->
 	<main>
 		<!--Section : Hébergements à Marseille-->
-		<div id="Hebergements-conteneur">
+		<article>
 			<!--Article :Hébergements à Marseille-->
-			<article>
-				<div id="Article-general-conteneur">
+			<div id="Article-section-hebergements">
+				<section id="Article-general-conteneur">
 					<h2 id="Article-titre">Hébergements à Marseille</h2>
 					<!--Conteneur-->
 					<div class="Article-conteneur">
 						<!--Cannebiére-->
-						<a href="#Hebergements-conteneur" class="lien">
+						<a href="#Article-section-hebergements" class="lien">
 							<div class="Article-element bordure-blanche">
 								<figure class="Article-figure"><img src="petit/cannebiere.jpg" alt="" class="Article-image"/></figure>
 								<div class="Article-txt background-blanc">
@@ -114,7 +114,7 @@
 							</div>
 						</a>
 						<!--Hotel du port-->
-						<a href="#Hebergements-conteneur" class="lien">
+						<a href="#Article-section-hebergements" class="lien">
 							<div class="Article-element bordure-blanche">
 								<figure class="Article-figure"><img src="petit/hotelduport.jpg" alt="" class="Article-image"/></figure>
 								<div class="Article-txt background-blanc">
@@ -131,7 +131,7 @@
 							</div>
 						</a>
 						<!--Les mouettes-->
-						<a href="#Hebergements-conteneur" class="lien">
+						<a href="#Article-section-hebergements" class="lien">
 							<div class="Article-element bordure-blanche">
 								<figure class="Article-figure"><img src="petit/lesmouettes.jpg" alt="" class="Article-image"/></figure>
 								<div class="Article-txt background-blanc">
@@ -148,7 +148,7 @@
 							</div>
 						</a>
 						<!--Hotel de la mer-->
-						<a href="#Hebergements-conteneur" class="lien">
+						<a href="#Article-section-hebergements" class="lien">
 							<div class="Article-element bordure-blanche">
 								<figure class="Article-figure"><img src="petit/hoteldelamer.jpg" alt="" class="Article-image"/></figure>
 								<div class="Article-txt background-blanc">
@@ -165,7 +165,7 @@
 							</div>
 						</a>
 						<!--le Panier-->
-						<a href="#Hebergements-conteneur" class="lien">
+						<a href="#Article-section-hebergements" class="lien">
 							<div class="Article-element bordure-blanche">
 								<figure class="Article-figure"><img src="petit/lepanier.jpg" alt="" class="Article-image"/>
 								</figure>
@@ -183,7 +183,7 @@
 							</div>
 						</a>
 						<!--Chez amina-->
-						<a href="#Hebergements-conteneur" class="lien">
+						<a href="#Article-section-hebergements" class="lien">
 							<div class="Article-element bordure-blanche">
 								<figure class="Article-figure"><img src="petit/chezamina.jpg" alt="" class="Article-image"/>
 								</figure>
@@ -201,77 +201,78 @@
 							</div>
 						</a>
 					</div>
-					<h3 id="Article-afficherplus"><a href="#Hebergements-conteneur" class="lien">Afficher plus</a></h3>
-				</div>
-			</article>
+					<h3 id="Article-afficherplus"><a href="#Article-afficherplus" class="lien">Afficher plus</a></h3>
+				</section>
+			</div>
 			<!--Aside : Les plus populaires-->
-			<aside>
-				<div id="Aside-general-conteneur">
-					<div id="Aside-titre-conteneur">
+			<div id="Article2-section-lespluspopulaires">
+				<div id="Article2-general-conteneur">
+					<div id="Article2-titre-conteneur">
 						<div>
-							<h2 id="Aside-titre">Les plus populaires</h2>
+							<h2 id="Article2-titre">Les plus populaires</h2>
 						</div>
-						<div><i class="fas fa-chart-line" id="Aside-icon"></i></div>
+						<div><i class="fas fa-chart-line" id="Article2-icon"></i></div>
 					</div>
 					<!--Conteneur-->
-					<div class="Aside-conteneur">
+					<div class="Article2-conteneur">
 						<!--Hotel le soleil-->
-						<a href="#Aside-general-conteneur" class="lien">
-							<div class="Aside-element bordure-blanche">
-								<figure class="Aside-figure"><img src="petit/lesoleildumatin.jpg" alt="" class="Aside-image"/></figure>
-								<div class="Aside-txt background-blanc">
+						<a href="#Article2-general-conteneur" class="lien">
+							<div class="Article2-element bordure-blanche">
+								<figure class="Article2-figure"><img src="petit/lesoleildumatin.jpg" alt="" class="Article2-image"/></figure>
+								<div class="Article2-txt background-blanc">
 									<div class="Element-titre gras">Hôtel Le soleil du matin</div>
 									<div class="Element-pr">Nuit à partir de 128<span class="gras">€</span></div>
 									<div class="flex">
-										<div><i class="fas fa-star bleu Aside-star"></i></div>
-										<div><i class="fas fa-star bleu Aside-star"></i></div>
-										<div><i class="fas fa-star bleu Aside-star"></i></div>
-										<div><i class="fas fa-star bleu Aside-star"></i></div>
-										<div><i class="fas fa-star bleu Aside-star"></i></div>
+										<div><i class="fas fa-star bleu Article2-star"></i></div>
+										<div><i class="fas fa-star bleu Article2-star"></i></div>
+										<div><i class="fas fa-star bleu Article2-star"></i></div>
+										<div><i class="fas fa-star bleu Article2-star"></i></div>
+										<div><i class="fas fa-star bleu Article2-star"></i></div>
 									</div>
 								</div>
 							</div>
 						</a>
 						<!--Au coeur de l'eau-->
-						<a href="#Aside-general-conteneur" class="lien">
-							<div class="Aside-element bordure-blanche">
-								<figure class="Aside-figure"><img src="petit/aucoeurdeleau.jpg" alt="" class="Aside-image"/></figure>
-								<div class="Aside-txt background-blanc">
+						<a href="#Article2-general-conteneur" class="lien">
+							<div class="Article2-element bordure-blanche">
+								<figure class="Article2-figure"><img src="petit/aucoeurdeleau.jpg" alt="" class="Article2-image"/></figure>
+								<div class="Article2-txt background-blanc">
 									<div class="Element-titre gras">Au coeur de l'eau Chambres d'hôtes</div>
 									<div class="Element-pr">Nuit à partir de 71<span class="gras">€</span></div>
 									<div class="flex">
-										<div><i class="fas fa-star bleu Aside-star"></i></div>
-										<div><i class="fas fa-star bleu Aside-star"></i></div>
-										<div><i class="fas fa-star bleu Aside-star"></i></div>
-										<div><i class="fas fa-star bleu Aside-star"></i></div>
-										<div><i class="fas fa-star gris Aside-star"></i></div>
+										<div><i class="fas fa-star bleu Article2-star"></i></div>
+										<div><i class="fas fa-star bleu Article2-star"></i></div>
+										<div><i class="fas fa-star bleu Article2-star"></i></div>
+										<div><i class="fas fa-star bleu Article2-star"></i></div>
+										<div><i class="fas fa-star gris Article2-star"></i></div>
 									</div>
 								</div>
 							</div>
 						</a>
 						<!--Hotel tout bleu et blanc-->
-						<a href="#Aside-general-conteneur" class="lien">
-							<div class="Aside-element bordure-blanche">
-								<figure class="Aside-figure"><img src="petit/toutbleuetblanc.jpg" alt="" class="Aside-image"/></figure>
-								<div class="Aside-txt background-blanc">
+						<a href="#Article2-general-conteneur" class="lien">
+							<div class="Article2-element bordure-blanche">
+								<figure class="Article2-figure"><img src="petit/toutbleuetblanc.jpg" alt="" class="Article2-image"/></figure>
+								<div class="Article2-txt background-blanc">
 									<div class="Element-titre gras">Hôtel Tout bleu et Blanc</div>
 									<div class="Element-pr">Nuit à partir de 68<span class="gras">€</span></div>
 									<div class="flex">
-										<div><i class="fas fa-star bleu Aside-star"></i></div>
-										<div><i class="fas fa-star bleu Aside-star"></i></div>
-										<div><i class="fas fa-star bleu Aside-star"></i></div>
-										<div><i class="fas fa-star bleu Aside-star"></i></div>
-										<div><i class="fas fa-star gris Aside-star"></i></div>
+										<div><i class="fas fa-star bleu Article2-star"></i></div>
+										<div><i class="fas fa-star bleu Article2-star"></i></div>
+										<div><i class="fas fa-star bleu Article2-star"></i></div>
+										<div><i class="fas fa-star bleu Article2-star"></i></div>
+										<div><i class="fas fa-star gris Article2-star"></i></div>
 									</div>
 								</div>
 							</div>
 						</a>
 					</div>
 				</div>
-			</aside>
-		</div>
+			</div>
+		</article>
 		<!--Activités à Marseille-->
-		<section id="Activites-section">
+		<aside>
+			<div id="Aside-section">
 			<div id="Activites-general-conteneur">
 				<h2 id="Activites-titre">Activités à Marseille</h2>
 				<!--Conteneur-->
@@ -328,37 +329,40 @@
 					<!--Fin du petit conteneur-->
 				</div>
 			</div>
-		</section>
+			</div>
+		</aside>
 	</main>
 	<!--Footer-->
 	<footer>
 		<!--À propos-->
-		<section id="Footer">
-			<div>
-				<h3>A propos</h3>
+		<div id="Footer-section">
+			<div id="Footer-conteneur">
+				<div>
+					<h3>A propos</h3>
 				<ul>
 					<li><a href="#Footer" class="lien-footer">Fonctionnement du site</a></li>
 					<li><a href="#Footer" class="lien-footer">Conditions générales de ventes</a></li>
 					<li><a href="#Footer" class="lien-footer">Données et confidentialité</a></li>
 				</ul>
-			</div>
+				</div>
 			<!--Nos hébergements-->
-			<div>
-				<h3>Nos hébergements</h3>
+				<div>
+					<h3>Nos hébergements</h3>
 				<ul>
 					<li><a href="#Footer" class="lien-footer">Charte qualité</a></li>
 					<li><a href="#Footer" class="lien-footer">Soumettre votre hôtel</a></li>
 				</ul>
-			</div>
+				</div>
 			<!--Assistance-->
-			<div>
-				<h3>Assistance</h3>
+				<div>
+					<h3>Assistance</h3>
 				<ul>
 					<li><a href="#Footer" class="lien-footer">Centre d'aide</a></li>
 					<li><a href="#Footer" class="lien-footer">Nous contacter</a></li>
 				</ul>
+				</div>
 			</div>
-		</section>
+		</div>
 	</footer>
 </body>
 </html>
