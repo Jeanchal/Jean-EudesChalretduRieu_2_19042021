@@ -26,7 +26,7 @@ header, main, #Footer-section
 	flex-direction: column;
 	background-color: #F2F2F2;
 	border-radius: 20px;
-	max-width: auto;
+	max-width: initial;
 	width: 67%;
 	justify-content: flex-start;
 	align-items: center;
@@ -40,7 +40,7 @@ header, main, #Footer-section
 	flex-direction: column;
 	background-color: #F2F2F2;
 	border-radius: 10px;
-	max-width: auto;
+	max-width: initial;
 	width: 32%;
 }
 #Article-general-conteneur, #Aside-general-conteneur
@@ -219,7 +219,6 @@ nav
 #Nav-sinscrire
 {
 	font-size: 1.1em;
-	width: 80px;
 }
 #Recherche-Filtres-conteneur
 {
@@ -306,7 +305,6 @@ nav
 	align-items: center;
 	justify-content: space-around;
 	border-radius: 30px;
-	width: auto;
 	height: 34px;
 	margin-right: 20px;
 	margin-bottom: 10px;
@@ -316,8 +314,7 @@ nav
 .Filtres-element:hover
 {
 	font-size: 110%;
-	background-color: #F2F2F2;
-	border: 2px solid #F2F2F2;
+	background-color: rgb(217, 217, 217);
 	box-shadow: 1px 5px 7px grey;
 }
 .Filtres-icon
@@ -643,7 +640,19 @@ li
 	{
 		font-size: 110%;
 	}
-	#Recherche-conteneur, p, #Article-afficherplus
+	#Plusde500
+	{
+		font-size: 80%;
+	}
+	#Nav-conteneur, #Logo-conteneur
+	{
+		width: 90%;
+	}
+	#Titre-principal, #Recherche-Filtres-conteneur
+	{
+		width: 90%;
+	}
+	#Recherche-conteneur, p, #Article-afficherplus, #Filtre-titre
 	{
 		font-size: 120%;
 	}
@@ -653,20 +662,15 @@ li
 	}	
 	#Logo-conteneur, #Recherche-Filtres-conteneur
 	{
-		padding-left: 30px;
+		padding-left: 15px;
 	}
 	#Titre-principal
 	{
-		font-size: 165%;
-		min-width: 300px;
+		font-size: 135%;
 	}
 	#Head-conteneur
 	{
 		flex-direction: column;
-	}
-	#Logo-conteneur
-	{
-		width: 92%;
 	}
 	nav
 	{
@@ -676,6 +680,7 @@ li
 	{
 		margin: 0;
 		height: 35px;
+		width: 20%;
 	}
 	#Nav-sinscrire:hover
 	{
@@ -692,9 +697,9 @@ li
 	.Nav-element
 	{
 		text-align: center;
-		width: 145px;
 		position: relative;
 		top: 4px;
+		font-size: 90%;
 	}
 	.Nav-element:hover, #Nav-hebergements, #Nav-activites
 	{
@@ -723,7 +728,7 @@ li
 	}
 	#Recherche-conteneur
 	{
-		width: 380px;
+		width: 320px;
 		border-top: 1px solid rgb(242, 242, 242);
 		border-bottom: 1px solid rgb(242, 242, 242);
 		border-radius: 20px;
@@ -732,10 +737,8 @@ li
 	}
 	#R-barre-recherche
 	{
-		width: 230px;
+		width: 100%;
 		padding: 20px 15px 5px 15px;
-		border-bottom: 1px solid white;
-		border-top: 1px solid white;
 	}
 	#R-barre-txt
 	{
@@ -744,7 +747,7 @@ li
 		position: relative;
 		bottom: 20px;
 		right: 15px;
-		font-size: 1.1em;
+		font-size: 90%;
 		font-weight: bold;
 		padding-left: 10px;
 		border: none;
@@ -772,12 +775,20 @@ li
 	}
 	#Filtre-titre
 	{
-		width: 70%;
-		margin-bottom: 5px;
+		width: 100%;
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+	#Filtres-conteneur 
+	{
+		font-size: 90%;
 	}
 	.Filtres-element
 	{
 		padding: 7px 6px 7px 6px;
+		height: 34px;
+		margin-right: 10px;
+		margin-bottom: 10px;
 	}
 	.Filtres-icon
 	{
@@ -789,13 +800,9 @@ li
 		padding: 15px 10px 4px 10px;
 		font-size: 130%;
 	}
-	#Filtre-marge
+	.Filtres-txt
 	{
-		margin-right: 10px;
-	}
-	#Plusde500
-	{
-		width: 90%;
+		padding: 0 10px 0 0;
 	}
 	#Article-section
 	{
@@ -811,7 +818,7 @@ li
 	}
 	#Article-general-conteneur, .Article-element, .Article-figure, #Aside-general-conteneur, .Aside-element, #Activites-general-conteneur, .Act-element, .Act-gr-figure, .Act-pt-figure, .Act-sp-gr-figure, .Act-sp-pt-figure
 	{
-		width: 400px;
+		width: 310px;
 	}
 	#Article-general-conteneur
 	{
@@ -855,6 +862,7 @@ li
 	#Aside-titre-conteneur
 	{
 		margin: 10px 0 10px 0;
+		width: 100%;
 	}
 	.Aside-conteneur
 	{
@@ -868,7 +876,7 @@ li
 	}
 	.Aside-figure
 	{
-		width: 180px;
+		width: 150px;
 		height: 155px;
 	}
 	.Aside-txt
@@ -908,8 +916,6 @@ li
 	{
 		flex-direction: column;
 		width: 100%;
-		position: relative;
-		left: 10px;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 990px)
@@ -933,7 +939,7 @@ li
 	{
 		display: flex;
 		flex-direction: column;
-		max-width: auto;
+		max-width: initial;
 		width: 100%;
 		background-color: white;
 		margin-top: 15px;
@@ -951,7 +957,7 @@ li
 		flex-direction: column;
 		background-color: #F2F2F2;
 		border-radius: 0;
-		max-width: auto;
+		max-width: initial;
 		width: 100%;
 	}
 	#Aside-general-conteneur
